@@ -15,7 +15,7 @@ fractional operator+(fractional &l, fractional &r)
 {
     if (l.denom == r.denom)
     {
-        return fractional { l.num + }
+        return fractional { l.num + r.num }
     }
 }
 
