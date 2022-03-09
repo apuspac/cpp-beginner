@@ -1,3 +1,5 @@
+#include "all.h"
+
 struct fractional
 {
     int num;
@@ -9,10 +11,18 @@ struct fractional
     }
 };
 
+fractional operator+(fractional &l, fractional &r)
+{
+    if (l.denom == r.denom)
+    {
+        return fractional { l.num + }
+    }
+}
+
 int main()
 {
     fractional a = 1;
     fractional b = 2;
 
-    std::cout << a << " " << b << "\n";
+    std::cout << a.num << "  " << b.denom << "\n";
 }
